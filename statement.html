@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE & LINKS TO PAGES -->
+        <title>Project Statement</title>
+        <h1>We Can Teach Machines!</h1>
+            <div class = "link-header">
+            <!-- LINK TO HOME PAGE -->
+            <a href="machine.html"> Meet the Model</a>
+
+            <!-- LINK TO ABOUT US PAGE -->
+            <a href="try.html"> Try the Model</a>
+
+            <!-- LINK TO IMPLICIT BIAS RESOURCES PAGE -->
+            <a href="statement.html"> Project Statement</a>
+
+            <!-- LINK TO IMPLICIT BIAS RESOURCES PAGE -->
+            <a href="https://github.com/paj21/lis500teachmachine/tree/main"> GitHub Repository</a>
+
+            <!-- LINK TO CSS STYLESHEET -->
+            <link rel="stylesheet" href="mlstylepage.css">
+        </div>
+    </head>
+<body>
+    <main>
+        <!-- ABOUT MODEL -->
+        <h2>Building the Model</h2>
+        <p>Once we decided that we wanted our AI model to be able to recognize different types of shoes, we moved on to determining the different categories of shoe types. We wanted a diverse variety of shoe types, so this led us to our current list of shoe type categories: boots, cleats, Crocs, dress shoes, flats, heels, loafers, running shoes, sandals, and slippers.</p>
+        <p>In order for our AI model to accurately determine what shoe type is being presented, we must train our AI model first. To begin the training process, we needed data to give the AI model, so we gathered shoe images from the Designer Shoe Warehouse (DSW) website. To ensure accuracy, we included images of each shoe from different angles and images of different shoes within each category. Once gathering our training dataset of shoes, we trained the AI model by providing it with images of 5-8 different shoes for each category, with 4-7 images per shoe.</p>
+        <p>After running the training dataset through the AI model a couple of times, we ran into an issue regarding accuracy not being up to our standards. We noticed that the AI model would categorize a majority of the shoes being presented as crocs even if the shoes weren't crocs. To counteract this issue of accuracy, we continued to train the AI model by running the dataset around 250 times through the AI model. By running the training dataset through the model more times, it led to improved accuracy, where the AI model was able to determine what shoe was being presented around 50 to 60 percent of the time; of course, this was not at an acceptable level yet. It wasn't until we trained the model for around 500 epochs that we reached an acceptable level of accuracy. With this training, our AI model was able to accurately categorize a shoe being presented around 80 to 85 percent of the time.</p>
+        <p>Now that we have reached an acceptable level of accuracy for our AI model, we are able to put it out for others to use. We hope you enjoyed learning about the process of training our AI model, and we hope you try out our AI model!</p>
+        <br>
+
+        <!-- VIDEO -->
+         <h2>Lessons from <i>Unmasking AI</i></h2>
+         <p>While creating our AI model to recognize different types of shoes, we tried to keep in mind the importance of addressing potential biases or overall issues within the model. Throughout this class, Dr. Joy Buolamwini's book <i>Unmasking AI</i> has taught us several important lessons about how to look out for and reduce biases within AI algorithms. Lessons we drew upon while creating this shoe sorting algorithm include the importance of a diverse data set, testing algorithms, and transparency in model development.</p>
+         <p>One of the central themes of Buolamwini's work is the pervasive issue of bias in AI systems which stems from a variety of sources including unrepresentative training data. To help prevent biases and false categorizations within our AI model, we had to ensure we used a diverse dataset to train the model. In the case of shoes, this means making sure our dataset included a wide range of shoe styles, sizes, and angles. If our dataset was incomplete or unbalanced, the model's ability to identify shoes correctly would suffer. This is why within the training dataset category of "boots" we included images of many types of boots. We have images of snow boots, heeled boots, short boots, ugg boots, and more. In addition, each shoe has at least 4 different images representing different perspectives the shoe can be viewed from. Similarly, we included images of shoes designed for different demographics from child to special medical needs such as orthotic shoes.</p>
+         <p>Another possible area that biases could slip into our model pertains to what culture or region the shoes come from. We used images from Designer Shoe Warehouse's website, which is an American company whose primary market is within the United States. This could lead to misclassification or exclusion of shoes from regions outside of the US because the model may struggle to identify shoes from other parts of the world. This can lead to a lack of inclusivity within the system, and is something we're hoping to improve within our model.</p>
+         <p>This also leads to the importance of testing our algorithms. As mentioned early, while testing our AI model, we found that a majority of shoes were being categorized as crocs, even when the shoes were not crocs. By testing our model, we were able to monitor its accuracy and strive to make continuous improvements. In addition, testing our model helps us to see where representation of different shoes may be lacking and improve our dataset. While the stakes are not particularly high with our shoes model, it's important to make sure that testing is a regular part of the creation and upkeep process for AI. Buolamwini's work underscores how failure to adequately test AI models can lead to bias and inaccuracies that could have been prevented. In our case, this looks like testing our model with shoes from different demographics, culturals, and styles to ensure that we don't disadvantage potential users.</p>
+         <p>Another crucial lesson from Buolawmini's book is the importance of transparency and explainability in AI systems. AI models, particularly deep learning models, are often referred to as "black boxes" because their decision-making processes are generally unknown. This lack of transparency can be problematic, particularly in situations where users need to understand why an AI system made the decision it did. In the case of our shoe model, if the model misidentifies a shoe, it's important that we as designers as well as the users understand why the mistake was made and what steps can be taken to correct it.</p>
+         <p>In addition, transparency in AI systems helps build trust between the model and its users. If the system can explain its reasoning, then it can help identify why an error was made (color, size, lacing style, etc), which points developers in the right direction to refine the system. This is why we provide you the code and training images used! Not only can you play around with the model to help understand it better, but you can help test the model as well!</p>
+         <p>In conclusion, by providing a diverse dataset, testing our algorithm, and ensuring transparency, we developed a robust and trustworthy AI model for identifying shoes. These lessons from Dr. Joy Buolamwini's book, <i>Unmasking AI</i>, guided us in creating a fair, ethical, and transparent AI system. We hope you enjoyed learning about our journey and look forward to seeing how our AI model helps you identify shoes accurately!</p>
+    </main>
+</body>
+</html>

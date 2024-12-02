@@ -1,0 +1,115 @@
+/* Global Styles: Apply to the entire website */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e8f8f0, #d8f0e8); /* Light green gradient background */
+    color: #333;  /* Set default text color to dark gray */
+    line-height: 1.6;
+}
+
+/* Main Content: Style the main content container */
+main {
+    width: 80%;  /* Set width of the content area */
+    margin: 20px auto;  /* Center the main content with margin */
+    background-color: #ffffff;  /* White background for better contrast */
+    padding: 30px;  /* Increased padding for a spacious feel */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);  /* Deeper shadow for a lifted effect */
+    border-radius: 15px;  /* More pronounced rounded corners */
+}
+
+/* Headings: Set styles for different levels of headings */
+h1, h2, h3 {
+    color: #19411a;  /* Dark green color for headings */
+    text-align: center;  /* Center align headings */
+    margin-bottom: 20px;  /* Space below each heading */
+}
+
+h1 {
+    font-size: 36px;  /* Large size for main page headings */
+}
+
+h2 {
+    font-size: 28px;  /* Medium size for section headings */
+    border-bottom: 2px solid #27ae60;  /* Underline for section headings */
+    padding-bottom: 10px;  /* Padding below the heading */
+}
+
+h3 {
+    font-size: 24px;  /* Smaller size for sub-section headings */
+    margin-top: 30px;  /* Add spacing above sub-section headings */
+}
+
+/* Links: Basic styling for all anchor tags */
+a {
+    color: #ffffff;  /* White text for links */
+    text-decoration: none;  /* Remove underlines from links */
+    padding: 10px 20px;  /* Add padding for larger clickable area */
+    display: inline-block;  /* Allows padding around links */
+    background-color: #198044;  /* Button-like background for links */
+    border-radius: 5px;  /* Rounded corners for links */
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+a:hover {
+    background-color: #1abc9c;  /* Change background color on hover for interactivity */
+}
+
+.link-header {
+    display: flex;  /* Use flexbox layout */
+    justify-content: center;  /* Center links horizontally */
+    gap: 10px;  /* Add space between the links */
+}
+
+#sketch-container { 
+    display: flex; 
+    justify-content: center; /* Center horizontally */ 
+    margin: 0 auto; /* Center the container itself horizontally */ 
+}
+
+/* Navigation: Styles for the navigation menu */
+nav {
+    background-color: #27632a;  /* Dark green background for the navigation */
+    padding: 15px;  /* Padding around the nav items */
+    text-align: center;  /* Center the navigation links */
+    border-radius: 10px;  /* Rounded corners for the nav */
+    margin-bottom: 20px;  /* Space below navigation */
+}
+
+nav a {
+    margin: 0 10px;  /* Horizontal spacing between links */
+}
+
+nav a:hover {
+    background-color: #1abc9c;  /* Change background color on hover */
+}
+
+/* Images: Set default styling for images */
+img {
+    display: block;  /* Make image a block element */
+    max-width: 50%;  /* Ensure image is responsive */
+    max-height: 300px;  /* Set maximum height for images */
+    margin: 20px auto;  /* Center image with automatic margins */
+    border-radius: 10px;  /* Slightly round image corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* Light shadow for images */
+}
+
+/* Footer: Style for footer at the bottom of the page */
+footer {
+    text-align: center;  /* Center-align footer text */
+    padding: 20px;  /* Add padding to footer */
+    background-color: #27632a;  /* Dark green background for footer */
+    color: #ffffff;  /* White text for footer */
+    position: relative;  /* Position relative to content */
+    bottom: 0;  /* Ensure it stays at the bottom */
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    main {
+        width: 95%;  /* Reduce content width on small screens */
+    }
+
+    nav a {
+        display: block;  /* Stack nav links vertically */
+        margin: 10px 0;  /* Add spacing between stacked links */
+    }
+}
