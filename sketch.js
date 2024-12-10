@@ -6,7 +6,7 @@
 let video;
 
 // Setup
-let modelURL = 'https://teachablemachine.withgoogle.com/models/9Wc9OQAKm/';
+let modelURL = 'https://teachablemachine.withgoogle.com/models/Rl2QP6nX5/';
 let label = 'Waiting...';
 let classifier;
 
